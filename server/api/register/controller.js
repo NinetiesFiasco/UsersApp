@@ -11,8 +11,6 @@ var _register = (req,res,next)=>{
         success:0,
         message:"Пароли не совпадают"
       });
-      
-    console.log(`${data.login}myMiniSalt${data.passInp}`);
 
     data.password = md5(`${data.login}myMiniSalt${data.passInp}`);
 

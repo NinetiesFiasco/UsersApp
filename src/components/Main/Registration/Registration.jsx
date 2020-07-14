@@ -25,7 +25,7 @@ class Registration extends Component {
       passRepeatInp: this.passRepeatInp.current.value
     };
     
-    axios.post('/registrate',data)
+    axios.post('/api/registrate',data)
       .then((response)=>{
         if (response.data.success === 1){
           this.setState({redirect:true})
