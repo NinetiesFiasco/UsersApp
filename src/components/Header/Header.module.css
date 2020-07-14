@@ -1,0 +1,15 @@
+.header{
+  height: 100px;
+  background: lightgreen;
+}
+.list{
+  margin: 0px;
+}
+.list>div{
+  display: inline-block;
+  margin: 10px;
+}
+.list>div>a{
+  display: inline-block;
+  margin: 10px;  
+}
