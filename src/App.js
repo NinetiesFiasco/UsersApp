@@ -1,11 +1,11 @@
 import React from 'react';
-import './App.css';
-import Main from './components/Main/Main';
+import s from './App.module.css';
 import Header from './components/Header/HeaderContainer';
 import {Route} from 'react-router-dom';
-import Registration from './components/Main/Registration/Registration';
-import Users from './components/Main/Users/UsersContainer';
-import Login from './components/Main/Login/LoginContainer';
+import Main from './components/Pages/Main/Main';
+import Users from './components/Pages/Users/UsersContainer';
+import Registration from './components/Pages/Registration/Registration';
+import LoginForm from './components/Pages/LoginForm/LoginFormContainer';
 import {connect} from 'react-redux';
 import {getMyAuth} from '../src/redux/auth';
 
@@ -17,14 +17,14 @@ class App extends React.Component {
 
   render(){
     return (
-      <div className="App">
+      <div className={s.App}>
         <header>
           <Header/>
         </header>
         <main>
           <Route path="/registration" component={Registration}/>
           <Route path="/users" component={Users}/>
-          <Route path="/login" component={Login}/>
+          <Route path="/login" component={LoginForm}/>
           <Route path="/" component={Main} exact/>
         </main>
       </div>

@@ -1,0 +1,23 @@
+.container{
+  width: 400px;
+  margin: auto;
+}
+
+.error{
+  color: red;
+}
+
+.tab{
+  width: 250px;
+  margin: auto;
+}
+.tab>tbody>tr>td:first-child{
+  text-align: right;
+}
+
+.tab>tbody>tr>td:nth-child(2){
+  text-align: left;
+}
+.tab tfoot{
+  text-align: center;
+}

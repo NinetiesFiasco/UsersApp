@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { Redirect } from 'react-router-dom';
+import s from './Registration.module.css';
 
 class Registration extends Component {
 
@@ -46,7 +47,7 @@ class Registration extends Component {
 
     return (
       <div>
-        <table>
+        <table className={s.tab}>
           <thead>
             <tr>
               <th colSpan="2">Регистрация</th>

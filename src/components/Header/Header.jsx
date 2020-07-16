@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import s from './Header.module.css'
-import {NavLink} from 'react-router-dom';
+import Login from './Login/LoginContainer';
+import Menu from './Menu/MenuContainer';
 
 class Header extends Component { 
   
@@ -11,22 +12,8 @@ class Header extends Component {
   render() {
     return (
       <div className={s.header}>
-        <div className={s.list}>
-          <div>{ this.props.isAuth ? "Вы авторизованы" : "Не авторизованы" }</div>
-          <div></div>
-          <div><NavLink to="/">Главная</NavLink></div>
-          {
-            this.props.isAuth
-            ? (<div>
-                <NavLink to="/users">Пользователи</NavLink>
-                <button onClick={this.logout}>Выйти</button>
-              </div>) 
-            : (<div>
-                <NavLink to="/login">Логин</NavLink>
-                <NavLink to="/registration">Регистрация</NavLink>
-              </div>)
-          }
-        </div>
+        <Menu/>
+        <Login />
       </div>
     );
   }

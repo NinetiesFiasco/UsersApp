@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  width: 1200px;
+  margin: auto;
+}
+
+.App main>div{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.App a {
+  text-decoration: none;
+}

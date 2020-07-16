@@ -1,0 +1,20 @@
+.but{  
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 5px;
+  background: burlywood;
+  border-radius: 15px;
+  border: 1px solid brown;
+  font-weight: bold;
+  padding: 2px 15px;
+}
+
+.but:hover{  
+  background: goldenrod;
+}
+
+:global(.moreSpecific) .but{  
+  background: saddlebrown;
+  color: white;
+}

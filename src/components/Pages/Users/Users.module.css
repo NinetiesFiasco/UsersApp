@@ -1,0 +1,10 @@
+.tab{
+  margin: 20px auto;
+  border-collapse: collapse;
+  width: 400px;
+}
+
+.tab td, .tab th{
+  border: 1px solid black;
+  padding: 5px;
+}

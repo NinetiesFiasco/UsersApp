@@ -1,15 +1,8 @@
 .header{
-  height: 100px;
-  background: lightgreen;
+  height: 75px;
+  background: navajowhite;
+  position: relative;
 }
-.list{
-  margin: 0px;
-}
-.list>div{
-  display: inline-block;
-  margin: 10px;
-}
-.list>div>a{
-  display: inline-block;
-  margin: 10px;  
+.header a{
+  color: black;
 }
